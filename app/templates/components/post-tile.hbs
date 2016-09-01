@@ -1,0 +1,8 @@
+<li>
+  {{post.author}} wrote {{post.title}}
+  {{#if isPostShowing}}
+  <p>{{post.text}} {{'postHide'}}</p>
+  {{else}}
+  <button {{action "postShow"}}>Show the post</button>
+  {{/if}}
+</li>
